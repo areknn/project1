@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-icon img {
+            width: 20px; /* Уменьшаем размер иконки */
+            cursor: pointer;
+        }
+
+        #menu {
+            display: none;
+        }
+
+        #menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #menu ul li {
+            padding: 10px 0;
+        }
+
+        #menu ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media only screen and (max-width: 600px) {
+            main {
+                padding-top: 60px; /* Adjust for fixed header */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-icon">
+            <img src="меню.png" alt="Меню" onclick="toggleMenu()">
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Басты бет</a></li>
+                <li><a href="tiktok.html">Тіктөртбұрыш ауданы</a></li>
+                <li><a href="parallelogram.html">Параллелограмм ауданы</a></li>
+                <li><a href="trapezoid.html">Трапеция ауданы</a></li>
+                <li><a href="square.html">Квадрат ауданы</a></li>
+                <li><a href="rhombus.html">Ромб ауданы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Төртбұрыш</h1>
+        <p>Төртбұрыш (грек тілінен. Τετραγωνον) - төрт нүктеден (шыңдардан) тұратын геометриялық фигура (көпбұрыш), олардың үшеуі бір түзуде жатпайды және осы нүктелерді тізбектей байланыстыратын төрт сегмент (қабырғалар)</p>
+        <p>Төртбұрыштардың түрлері -параллелограмм, трапеция, ромб, тіктөртбұрыш және шаршы.</p>
+    </main>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

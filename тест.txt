@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тіктөртбұрыш ауданы</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-icon img {
+            width: 20px; /* Уменьшаем размер иконки */
+            cursor: pointer;
+        }
+
+        #menu {
+            display: none;
+        }
+
+        #menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #menu ul li {
+            padding: 10px 0;
+        }
+
+        #menu ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            position: relative; /* Добавляем позиционирование для основного контейнера */
+        }
+
+        .circle-img {
+            width: 250px;
+            height: 200px;
+            float: left;
+            margin-right: -250px; /* Изменено */
+        }
+
+        table {
+            max-width: 1000px; /* Максимальная ширина таблицы */
+            width: 100%; /* Ширина таблицы в процентном соотношении */
+        }
+
+        p {
+            clear: both; /* Добавлено */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-icon">
+            <img src="меню.png" alt="Меню" onclick="toggleMenu()">
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Басты бет</a></li>
+                <li><a href="tiktok.html">Тіктөртбұрыш ауданы</a></li>
+                <li><a href="parallelogram.html">Параллелограмм ауданы</a></li>
+                <li><a href="trapezoid.html">Трапеция ауданы</a></li>
+                <li><a href="square.html">Квадрат ауданы</a></li>
+                <li><a href="rhombus.html">Ромб ауданы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Тіктөртбұрыш ауданы</h1>
+        <p> Тіктөртбұрыштың белгілері:</p>
+        <p>- параллелограммның бұрыштары тік бұрыш болып және оның диагональдары тең болса – тіктөртбұрыш болып табылады.</p>
+        <img class="circle-img" src="10.png" alt="Your Image">
+        <div class="square-img"></div>
+        <p>Барлық бұрыштары тік болып келетін параллелограммды – тік төртбұрыш деп атайды.</p>
+        <p>d1=d2</p>
+        <p>Сіздер бастауыш сыныптан-ақ, тіктөртбұрыштың ауданы оның өлшемдерінің көбейтіндісіне тең екенін білесіздер. Берілген параграфта осы формуланы аудан өлшемінің аксиомаларына сүйене отырып дәлелдейміз.</p>
+        <p>1-тұжырым (тіктөртбұрыштардың теңдігінің белгісі). Сәйкес өлшемдері тең тіктөртбұрыштар тең болады.</p>
+        <p>Берілгені: ABCD және KLMN – тіктөртбұрыштар (11-сурет), AB=KL, BC=LM.</p>
+        <p>Дәлелдеу керек: ABCD = KLMN.</p>
+        <img class="circle-img" src="11.png" alt="Your Image">
+        <p>Дәлелдеуі. KLMN тіктөртбұрышын ABCD тіктөртбұрышына беттестіру бар екендігін дәлелдейік. AB=KL  болғандықтан, бұл  кесінділерді беттестіру бар болады, яғни K нүктесін A нүктесімен, ал L нүктесін B нүктесімен беттестіреді.</p>
+        <p>M және N нүктелері C және D нүктелерімен бір жартыжазықта болатындай беттестіруді таңдап алайық. Себебі K, L, A, B – бұрыштары тік болғандықтан, бұл беттесуде келес
+        <p>Дәлелдеу керегі де осы.</p>
+        <p>Салдар. Сәйкес өлшемдері тең тіктөртбұрыштар теңшамалы болады.</p>
+        <p>Салдардың ақиқаттығы 1–тұжырымнан және S1– аксиомасынан шығады.</p>
+        <p>1-теорема (тіктөртбұрыштың ауданы туралы). Тіктөрт-бұрыштың ауданы оның өлшемдерінің көбейтіндісіне тең.</p>
+        <p>Берілгені: ABCD – тіктөртбұрышы (12-сурет), </p>
+        <p>AD=a, AB=b.</p>
+        <p>Дәлелдеу керек: S(ABCD) = ab.</p>
+        <p>Дәлелдеуі. ABCD тіктөртбұрышын, қабырғалары a+b болатын AKGE шаршысына дейін толықтырып саламыз (12–сурет). AKGE шаршысы өлшемдері a мен b болатын екі тіктөртбұрыштан және екі шаршыдан тұрады, олардың біреуінің қабырғасы a болса, екіншісінің – b (бұны өздерің негіздеңдер).</p>
+        <p>Берілген тіктөртбұрыштың ауданын S арқылы белгілейік. Өлшемдері бірдей болғандықтан, ABCD және CFGH тіктөртбұрыштары тең. Сондықтан, S(ABCD) = S(CHGF) = S. S3–аксиомасы бойынша, S(BKHC)=a2, S(DCFE)=b2. Онда S2–аксиомасы бойынша, аламыз:</p>
+        <p>S(AKGE)=a2+b2+2S</p>
+        <p>Сонымен бірге, S3–аксиомасы бойынша, S(AKGE)=(a+b)2. Бұдан, (a+b)2=a2+b2+2S</p>
+        <p>Сол жағының жақшаларын ашып, аламыз:</p>
+        <p>a2+2ab+b2=a2+b2+2S</p>
+        <p>Яғни,   екендігі шығады. Теорема дәлелденді.</p>
+        <table border="1">
+            <tr>
+                <td><img class="circle-img" src="10.png"></td>
+                <td>
+                    <p>Барлық бұрыштары тік болып келетін параллелограммды – тік төртбұрыш деп атайды.</p>
+                    <p>d1=d2</p>
+                    <p>a және b – тіктөртбұрыштың қабырғалары</p>
+                    <p>S=ab</p>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

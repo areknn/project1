@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Параллелограмм ауданы </title>
+    <link rel="stylesheet" type="text/css" href="отступ.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 18px;
+            margin-bottom: 50px;
+            text-align: justify;
+            
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-icon img {
+            width: 20px; /* Уменьшаем размер иконки */
+            cursor: pointer;
+        }
+
+        #menu {
+            display: none;
+        }
+
+        #menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #menu ul li {
+            padding: 10px 0;
+        }
+
+        #menu ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 50px;
+            position: relative; /* Добавляем позиционирование для основного контейнера */
+        }
+
+            .square-img {
+            width: 300px;
+            height: 200px;
+            float: left;
+            margin-right: 20px;
+          
+        }
+
+             .circle-img {
+             width: 250px;
+             height: 200px;
+             float: left;
+             shape-outside: circle(); /* Изменено */
+             margin-right: -250px; /* Изменено */
+        }
+        p {
+             clear: both; /* Добавлено */
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .bold-italic {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .italic {
+           font-style: italic;
+        }
+    </style>
+</head>
+<body>
+       
+    <header>
+        <div class="menu-icon">
+            <img src="меню.png" alt="Меню" onclick="toggleMenu()">
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Басты бет</a></li>
+                <li><a href="tiktok.html">Тіктөртбұрыш ауданы</a></li>
+                <li><a href="parallelogram.html">Параллелограмм ауданы</a></li>
+                <li><a href="trapezoid.html">Трапеция ауданы</a></li>
+                <li><a href="square.html">Квадрат ауданы</a></li>
+                <li><a href="rhombus.html">Ромб ауданы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Параллелограмм ауданы</h1>
+        <p>Параллелограмм мен ауданын табу үшін, формуланы шығарудың идеясы келесідей болады.Сондықтан, олардың әрқайсысы  диагональмен екі үшбұрышқа бөлінеді. Осы үшбұрыштардың аудандарының қосындысы бізге параллелограмм мен трапецияның ауданын береді.</p>
+        <p>Үшбұрыштағыдай, параллелограмның биіктігі жүргізілген қабырғасын оның табаны деп атаймыз.</p>
+        <p>1-теорема (параллелограмның ауданы туралы). Параллелограмның ауданы оның табанымен биіктігінің көбейтіндісіне тең.</p>
+        <img class="circle-img" src="15.png" alt="Your Image">
+        <div class="square-img"></div>
+        <p>Берілгені: ABCD – параллелограмм (15-сурет), AD=a – табаны, BH┴AD, BH=h – биіктігі.</p>
+        <p><span class="italic">Дәлелдеу керек:S(ABCD)=ah</span></p>
+        <p><span class="bold-italic"> Дәлелдеуі. </span><span class="italic">BD диагоналы параллелограмды тең екі ABD және BDC үшбұрышына бөледі. Бұдан, S (ABCD)=2S (ABD)</span</p>
+        <p>Параллелограмның BH биіктігі ABD үшбұрышының биіктігі болады, сонымен қатар параллелограмның AD табаны ABD үшбұрышының табаны болады. Яғни, S(ABD) = <span class="fraction"><span class="numerator">1</span>&frasl;<span class="denominator">2</span></span> ah. Бұл өрнекті алдыңғы теңдікке қойып: S(ABCD) = ah  екендігін аламыз. Теорема дәлелденді.</p>
+        <p><span class="italic">Ескерту. </span> Параллелограмның табаны ретінде оның кез келген қабырғасын алуға болады. Ауданын табу үшін нақты 0осы қабырғаға жүргізілген биіктікті таңдау керек. Сондықтан, егер параллелограмның AB қабырғасына жүргізілген биіктігінің ұзындығы h1 болса, онда S(ABCD)=AB*h<sub>1</sub> (15-сурет).</p>
+        <img class="circle-img" src="16.png" alt="Your Image">
+        <p><span class="bold-italic">Мысалы. </span>Сүйір бұрышы 30° ромбыға іштей шеңбер сызылған. Шеңбердің радиусы r . Ромбының ауданын табыңдар.</p>
+        <p><span class="bold-italic">Берілгені: </span>ABCD – ромб (16–сурет), <span>&ang;A=30°</span>, r – оған іштей сызылған шеңбердің радиусы.</p>
+        <p><span class="bold-italic">Табу керек: S(ABCD).</span></p>
+        <p><span class="bold-italic">Шешуі.</span> Ромбтың биіктігі оған іштей сызылған шеңбердің диаметріне тең (түсіндіріңдер). Ромбының BK биіктігін жүргізейік. Онда, BK=2r.  ABK тікбұрышты үшбұрышынан ромбының қабырғасын табамыз:AB=2BK, BK – 30°  бұрышқа қарсы жатқан катет.</p>
+         <p>Бұдан, AB=4r. Демек, AD=4r. Ромбының ізделінді ауданын табу қалды. <span class="italic">S=(ABCD)= AD*BK=4r-2r=8r<sup>2</sup>. Жауабы:S(ABCD)=8r<sup>2</sup></span></p>
+         </main>
+<table border="1" style="width: 100%; margin-left: 50px; margin-right: 10px;">
+    <tr>
+        <td><img class="circle-img" src="17.png"></td>
+        <td style="width: 50%;">
+            <p>a, b – параллелограмм қабырғалары</p>
+            <p>h – қабырғаларға түсірілген биіктік</p>
+            <p><span class="bold">S=ah<sub>a</sub>=bh<sub>b</sub></span></p>
+        </td>
+    </tr>
+</table>
+<!-- Дубликат таблицы -->
+<table border="1" style="width: 100%; margin-left: 50px; margin-right: -50px; margin-bottom: 20px;">
+    <tr>
+        <td><img class="circle-img" src="18.png"> </td>
+        <td style="width: 50%;">
+            <p>a, b – параллелограмм қабырғалары</p>
+            <p>h – қабырғаларға түсірілген биіктік</p>
+            <p>φ – қабырғалар арасындағы бұрыш</p>
+            <p><span class="bold-italic"> S=absin φ</span></p>
+        </td>
+    </tr>
+</table>
+<!-- Дубликат таблицы -->
+<table border="1" style="width: 100%; margin-left: 50px; margin-right: -50px; margin-bottom: 20px;">
+    <tr>
+        <td><img class="circle-img" src="18.png"> </td>
+        <td style="width: 50%;">
+            <p>d – диагональ </p>
+            <p>φ – диагональдар арасындағы кез келген бұрыш</p>
+            <p><span class="bold-italic">S = <span class="fraction"><span class="numerator">1</span>&frasl;<span class="denominator">2</span></span>d<sub>1</sub>d<sub>2</sub> sin(φ)</span></p>
+            <p><span class="bold-italic">d<sub>1</sub><sup>2</sup>+d<sub>2</sub><sup>2</sup>=2(a<sup>2</sup>+b<sup>2</sup>)</span></p>
+        </td>
+    </tr>
+</table>
+<div class="table-margin"></div>
+           <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
